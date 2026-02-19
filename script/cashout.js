@@ -5,10 +5,11 @@ document.getElementById('cashOut-btn').addEventListener('click', function () {
     const cashOutNumber = cashOutNumberInput.value;
     console.log(cashOutNumber);
     // validation
-    if(cashOutNumber.length != 11){
-        alert("invalid Agent Number");
-        return;
-    }
+   if(cashOutNumber.length !== 11 || isNaN(cashOutNumber)){
+    alert("Invalid Agent Number");
+    return;
+}
+
     
     // 2.get the amount
 
