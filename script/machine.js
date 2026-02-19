@@ -11,7 +11,7 @@ function getValueFromInput(id){
 function getBalance(){
     let balanceElement = document.getElementById("balance");
     let balance = balanceElement.innerText;
-    console.log(`current balance ${Number(balance)}`);
+    // console.log(`current balance ${Number(balance)}`);
     return Number(balance);
 }
 
