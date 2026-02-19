@@ -1,4 +1,3 @@
-
 document.getElementById('cashOut-btn').addEventListener('click',function(){
 // 1.get the agent number
 let  cashOutNumber = getValueFromInput("cashOut-number")
@@ -9,18 +8,13 @@ let  cashOutNumber = getValueFromInput("cashOut-number")
    }
  // 2.get the amount
 let cashOutAmount = getValueFromInput("cashOut-amount")
-
 //3.get the balance    
-  let balanceElement = document.getElementById('balance')
-  let balance = balanceElement.innerText;
-  console.log(balance);
-
-    //4. new balance calculate
-  
-     let newBalance = Number(balance) - Number(cashOutAmount);
+  let currentBalance = getBalance();
+ //4. new balance calculate
+    let newBalance = currentBalance - Number(cashOutAmount);
       console.log(newBalance);
 
-       //  5. valid the balance
+      //  5. valid the balance
 
     if(newBalance <0){
         alert("Invalid Amount");
@@ -32,7 +26,7 @@ let cashOutAmount = getValueFromInput("cashOut-amount")
     if(pin==='1234'){
     // show an alert set new balance
     alert("cashOut Successful")
-    balanceElement.innerText = newBalance;
+    setBalance(newBalance);
 
 
   }else{
