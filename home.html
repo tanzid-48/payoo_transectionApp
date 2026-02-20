@@ -75,7 +75,7 @@
                 <img src="./assets/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
-            <button onclick="showOnly('pay-bill')"  class="btn flex-col h-full py-4 btn-primary btn-soft ">
+            <button onclick="showOnly('pay-bill')" class="btn flex-col h-full py-4 btn-primary btn-soft ">
                 <img src="./assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
@@ -85,7 +85,7 @@
             </button>
         </div>
     </section>
- <!-- Add Money Section -->
+    <!-- Add Money Section -->
     <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-bold mb-2">Add Money</h2>
         <div class="from pt-10">
@@ -151,7 +151,7 @@
 
     <!-- Send Money Section -->
 
-       <section id="send-money" class="w-11/12 mx-auto py-5 hidden">
+    <section id="send-money" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-bold mb-2">Send Money</h2>
         <div class="form pt-10">
             <div class="card bg-base-100 w-full shadow rounded-2xl">
@@ -162,8 +162,8 @@
                             class="input rounded-full bg-base-200 w-full " placeholder="Enter 11 digit number" />
                         <br>
                         <label class="label text-neutral font-bold">Amount </label>
-                        <input id="send-money-amount" type="number"
-                            class="input rounded-full bg-base-200 w-full " placeholder="Enter amount to Send" />
+                        <input id="send-money-amount" type="number" class="input rounded-full bg-base-200 w-full "
+                            placeholder="Enter amount to Send" />
                         <br>
                         <label class="label text-neutral font-bold">Pin Number</label>
                         <input id="send-money-pin" maxlength="4" minlength="4" type="password"
@@ -177,58 +177,65 @@
 
     </section>
 
+    <!-- Get Bonus -->
+
+    <section id="bonus-section" class="w-11/12 mx-auto py-5 ">
+        <h2 class="text-xl font-bold mb-2">Get Bonus</h2>
+        <div class="bonus-card p-5 rounded-xl shadow bg-base-200 space-y-4 w-80 mx-auto">
+            <label class="label">Enter Bonus Coupon</label>
+            <input type="text" id="bonus-coupon-input" placeholder="Enter your coupon"
+                class="input w-full rounded-full bg-base-100 mb-4" />
+            <button id="get-bonus-btn" class="btn btn-primary w-full rounded-full">
+                Get Bonus
+            </button>
+        </div>
+
+    </section>
     <!-- Pay bill section -->
-       <section id="pay-bill" class="w-11/12 mx-auto py-5 hidden ">
-    <h2 class="text-xl font-bold mb-2">Pay Bill</h2>
-    <div class="form pt-10">
-        <div class="card bg-base-100 w-full shadow rounded-2xl">
-            <div class="card-body">
-                <fieldset class="fieldset">
+    <section id="pay-bill" class="w-11/12 mx-auto py-5 hidden ">
+        <h2 class="text-xl font-bold mb-2">Pay Bill</h2>
+        <div class="form pt-10">
+            <div class="card bg-base-100 w-full shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
 
-                    <label class="label text-neutral font-bold">Select To Pay</label>
-                    <select id="pay-bill-select" class="select w-full rounded-full bg-base-200">
-                        <option value="Select Bill Type" selected>Select Bill Type</option>
-                        <option value="electric-bill">Electric Bill</option>
-                        <option value="gas-bill">Gas Bill</option>
-                        <option value="wifi-bill">Wi-Fi Bill</option>
-                    </select>
+                        <label class="label text-neutral font-bold">Select To Pay</label>
+                        <select id="pay-bill-select" class="select w-full rounded-full bg-base-200">
+                            <option value="Select Bill Type" selected>Select Bill Type</option>
+                            <option value="electric-bill">Electric Bill</option>
+                            <option value="gas-bill">Gas Bill</option>
+                            <option value="wifi-bill">Wi-Fi Bill</option>
+                        </select>
 
-                    <label class="label text-neutral font-bold">Biller Account Number</label>
-                    <input id="pay-biller-number" maxlength="11" minlength="11"
-                        type="text"
-                        class="input rounded-full bg-base-200 w-full"
-                        placeholder="Enter account number" />
+                        <label class="label text-neutral font-bold">Biller Account Number</label>
+                        <input id="pay-biller-number" maxlength="11" minlength="11" type="text"
+                            class="input rounded-full bg-base-200 w-full" placeholder="Enter account number" />
 
-                    <label class="label text-neutral font-bold">Amount To Pay</label>
-                    <input id="pay-amount"
-                        type="number"
-                        class="input rounded-full bg-base-200 w-full"
-                        placeholder="Enter amount to pay" />
+                        <label class="label text-neutral font-bold">Amount To Pay</label>
+                        <input id="pay-amount" type="number" class="input rounded-full bg-base-200 w-full"
+                            placeholder="Enter amount to pay" />
 
-                    <label class="label text-neutral font-bold">Pin Number</label>
-                    <input id="pay-bill-pin" maxlength="4" minlength="4"
-                        type="password"
-                        class="input rounded-full bg-base-200 w-full"
-                        placeholder="Enter 4 digit Pin number" />
+                        <label class="label text-neutral font-bold">Pin Number</label>
+                        <input id="pay-bill-pin" maxlength="4" minlength="4" type="password"
+                            class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 digit Pin number" />
 
-                    <button id="pay-bill-btn"
-                        class="btn btn-primary rounded-full mt-4">
-                        Pay Now
-                    </button>
+                        <button id="pay-bill-btn" class="btn btn-primary rounded-full mt-4">
+                            Pay Now
+                        </button>
 
-                </fieldset>
+                    </fieldset>
+                </div>
             </div>
         </div>
-    </div>
-</section>
- <!-- Transaction History section -->
+    </section>
+    <!-- Transaction History section -->
     <section id="history" class="w-11/12 mx-auto py-5 hidden ">
         <h2 class="text-xl font-bold mb-2">Transaction History</h2>
         <div class="space-y-5" id="history-container">
         </div>
     </section>
 
- 
+
 
     <script src="./script/machine.js"></script>
     <script src="./script/addmoney.js"></script>
