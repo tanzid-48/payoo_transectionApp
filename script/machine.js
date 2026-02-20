@@ -27,10 +27,12 @@ function setBalance(value){
 function showOnly(id){
     let addMoney = document.getElementById("add-money")
     let cashOut = document.getElementById("cash-out");
+    let history = document.getElementById("history");
 
     // hide all
     addMoney.classList.add("hidden")
     cashOut.classList.add("hidden");
+    history.classList.add("hidden");
 
     // id element gula dor
 

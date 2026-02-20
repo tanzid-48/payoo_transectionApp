@@ -28,6 +28,22 @@ let cashOutAmount = getValueFromInput("cashOut-amount")
     alert("cashOut Successful")
     setBalance(newBalance);
 
+  // get tht history
+      let history = document.getElementById("history-container")
+
+    //2. Create a new div
+    let newHistory = document.createElement("div");
+    // 3.new div innerHtml add kor
+    newHistory.innerHTML = `
+    <div class="transaction-card p-5 bg-base-100">
+      CashOut 
+        ${cashOutAmount} taka success to  ${cashOutNumber}
+        at ${new Date()}
+ </div>
+    `;
+    // 4. append this
+    history.append(newHistory);
+
 
   }else{
     // 5.show error alert
