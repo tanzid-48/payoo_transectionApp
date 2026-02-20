@@ -18,7 +18,7 @@ document.getElementById("add-money-btn").addEventListener('click',function(){
    let amount = getValueFromInput("add-money-amount");
    let currentBalance = getBalance();
    let newBalance =  currentBalance + Number(amount);
-   
+  //  pin validation
    let pin = getValueFromInput("add-money-pin");
       if(pin==='1234'){
     // show an alert set new balance
