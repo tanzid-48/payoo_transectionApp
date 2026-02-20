@@ -28,6 +28,7 @@ function showOnly(id){
     let addMoney = document.getElementById("add-money")
     let cashOut = document.getElementById("cash-out");
     let sendMoney = document.getElementById("send-money");
+    let bonusSection = document.getElementById("bonus-section");
     let history = document.getElementById("history");
     let payBill = document.getElementById("pay-bill");
     
@@ -35,9 +36,10 @@ function showOnly(id){
     // hide all
     addMoney.classList.add("hidden")
     cashOut.classList.add("hidden");
-    history.classList.add("hidden");
-    payBill.classList.add("hidden");
     sendMoney.classList.add("hidden");
+    bonusSection.classList.add("hidden");
+    payBill.classList.add("hidden");
+    history.classList.add("hidden");
 
     // id element gula dor
 
