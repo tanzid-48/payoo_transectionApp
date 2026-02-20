@@ -85,7 +85,7 @@
             </button>
         </div>
     </section>
-
+ <!-- Add Money Section -->
     <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-bold mb-2">Add Money</h2>
         <div class="from pt-10">
@@ -121,6 +121,8 @@
         </div>
     </section>
 
+    <!-- Cash Out Section -->
+
     <section id="cash-out" class="w-11/12 mx-auto py-5 hidden ">
         <h2 class="text-xl font-bold mb-2">Cash Out</h2>
         <div class="from pt-10">
@@ -147,13 +149,36 @@
 
     </section>
 
-    <section id="history" class="w-11/12 mx-auto py-5 hidden ">
-        <h2 class="text-xl font-bold mb-2">Transaction History</h2>
-        <div class="space-y-5" id="history-container">
+    <!-- Send Money Section -->
+
+       <section id="send-money" class="w-11/12 mx-auto py-5 ">
+        <h2 class="text-xl font-bold mb-2">Send Money</h2>
+        <div class="form pt-10">
+            <div class="card bg-base-100 w-full shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-neutral font-bold">User Account Number</label>
+                        <input id="send-money-number" maxlength="11" minlength="11" type="text"
+                            class="input rounded-full bg-base-200 w-full " placeholder="Enter 11 digit number" />
+                        <br>
+                        <label class="label text-neutral font-bold">Amount </label>
+                        <input id="send-money-amount" type="number"
+                            class="input rounded-full bg-base-200 w-full " placeholder="Enter amount to Send" />
+                        <br>
+                        <label class="label text-neutral font-bold">Pin Number</label>
+                        <input id="send-money-pin" maxlength="4" minlength="4" type="password"
+                            class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 digit Pin number" />
+
+                        <button id="send-money-btn" class="btn btn-primary rounded-full mt-4">Send Money Now</button>
+                    </fieldset>
+                </div>
+            </div>
         </div>
+
     </section>
 
-    <section id="pay-bill" class="w-11/12 mx-auto py-5 hidden ">
+    <!-- Pay bill section -->
+       <section id="pay-bill" class="w-11/12 mx-auto py-5 hidden ">
     <h2 class="text-xl font-bold mb-2">Pay Bill</h2>
     <div class="form pt-10">
         <div class="card bg-base-100 w-full shadow rounded-2xl">
@@ -196,6 +221,14 @@
         </div>
     </div>
 </section>
+ <!-- Transaction History section -->
+    <section id="history" class="w-11/12 mx-auto py-5 hidden ">
+        <h2 class="text-xl font-bold mb-2">Transaction History</h2>
+        <div class="space-y-5" id="history-container">
+        </div>
+    </section>
+
+ 
 
     <script src="./script/machine.js"></script>
     <script src="./script/addmoney.js"></script>
