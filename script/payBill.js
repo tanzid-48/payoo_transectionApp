@@ -46,7 +46,7 @@ document.getElementById("pay-bill-btn").addEventListener('click',function(){
     // 3.new div innerHtml add kor
     newHistory.innerHTML = `
     <div class="transaction-card p-5 bg-base-100">
-      pay bill
+      Pay bill
         ${payAmount} taka from  ${billerAccountNumber}
         at ${new Date()}
  </div>
