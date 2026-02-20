@@ -46,4 +46,12 @@ document.getElementById("add-money-btn").addEventListener('click',function(){
     alert("Invalid Pin");
     return;
   }
+
+   clearInputs([
+        "add-money-bank",
+        "add-money-number",
+        "add-money-amount",
+        "add-money-pin"
+    ]);
+
 });

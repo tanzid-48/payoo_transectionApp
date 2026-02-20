@@ -50,6 +50,13 @@ let cashOutAmount = getValueFromInput("cashOut-amount")
     alert("Invalid Pin");
     return;
   }
+
+  clearInputs([
+        "cashOut-number",
+        "cashOut-amount",
+        "cashOut-pin"
+    ]);
+
 });
 
 

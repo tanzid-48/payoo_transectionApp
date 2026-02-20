@@ -60,6 +60,13 @@ document.getElementById("pay-bill-btn").addEventListener('click',function(){
     alert("Invalid Pin");
     return;
   }
+ clearInputs([
+        "pay-bill-select",
+        "pay-biller-number",
+        "pay-amount",
+        "pay-bill-pin"
+    ]);
+
 });
 
  

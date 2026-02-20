@@ -46,4 +46,16 @@ function showOnly(id){
     let selected = document.getElementById(id);
     selected.classList.remove("hidden");
 }
- 
+//  clear Input 
+function clearInputs(ids){
+    ids.forEach(id => {
+        const element = document.getElementById(id);
+        if(!element) return;
+
+        if(element.tagName === "SELECT"){
+            element.selectedIndex = 0;
+        }else{
+            element.value = "";
+        }
+    });
+}

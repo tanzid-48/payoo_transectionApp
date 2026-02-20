@@ -33,4 +33,6 @@ document.getElementById("get-bonus-btn").addEventListener('click', function() {
         alert("Invalid coupon");
     }
 
+     clearInputs(["bonus-coupon-input"]);
+
 });

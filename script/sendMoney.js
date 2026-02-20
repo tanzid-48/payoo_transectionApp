@@ -58,12 +58,11 @@ document.getElementById('send-money-btn').addEventListener('click', function () 
     return;
   }
 
-
-
-
-
-
-
+   clearInputs([
+        "send-money-number",
+        "send-money-amount",
+        "send-money-pin"
+    ]);
 
 
 });
