@@ -21,3 +21,20 @@ function setBalance(value){
     let balanceElement = document.getElementById("balance");
     balanceElement.innerText = value;
 }
+
+//  machine id --> hide all -->show id
+
+function showOnly(id){
+    let addMoney = document.getElementById("add-money")
+    let cashOut = document.getElementById("cash-out");
+
+    // hide all
+    addMoney.classList.add("hidden")
+    cashOut.classList.add("hidden");
+
+    // id element gula dor
+
+    let selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+}
+ 

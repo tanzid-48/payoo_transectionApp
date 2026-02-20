@@ -59,11 +59,11 @@
 
         <div class="buttons grid grid-cols-3 gap-3 mt-7 ">
 
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft ">
+            <button onclick="showOnly('add-money')" class="btn flex-col h-full py-4 btn-primary btn-soft ">
                 <img src="./assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft ">
+            <button onclick="showOnly('cash-out')" class="btn flex-col h-full py-4 btn-primary btn-soft ">
                 <img src="./assets/opt-2.png" alt="">
                 <p>CashOut</p>
             </button>
@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <section id="cash-out" class="w-11/12 mx-auto py-5 hidden">
+    <section id="cash-out" class="w-11/12 mx-auto py-5 ">
         <h2 class="text-xl font-bold mb-2">Cash Out</h2>
         <div class="from pt-10">
             <div class="card bg-base-100 w-full shadow rounded-2xl">
